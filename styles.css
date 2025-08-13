@@ -37,8 +37,11 @@ header {
 }
  
 .nav-links li a:hover {
+    background-color: rgba(255, 255, 255, 0.1);
     color: #9131a4;
     text-decoration: underline;
+    padding: 20px;
+    border-radius: 8px;
 }
 main {
     margin: 1rem;
@@ -69,6 +72,7 @@ section h2 {
 .homepic {
     max-width: 100%;
     height: auto;
+    border-radius: 8px;
 }
 .gallery {
     display: grid;
@@ -77,12 +81,15 @@ section h2 {
     margin: 1rem;
 }
 .gallery img {
+    border-radius: 8px;
     max-width: 100%;
     height: auto;
 }
-section #services {
+#services {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
     gap: 1rem;
 }
 .services-list {
@@ -90,6 +97,7 @@ section #services {
     padding: 0;
 }
 .services-list li {
+    max-width: 600px;
     text-align: center;
     background: rgba(15, 15, 15, 0.1);
     margin: 0.5rem 0;
@@ -126,6 +134,13 @@ label {
 }
 
 input {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box; 
+}
+select {
   width: 100%;
   padding: 10px;
   border: 1px solid #ccc;
