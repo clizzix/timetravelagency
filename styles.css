@@ -43,7 +43,6 @@ header {
     background-color: rgba(255, 255, 255, 0.1);
     color: #9131a4;
     transition: all 0.3s ease;
-    text-decoration: underline;
     padding: 20px;
     border-radius: 8px;
 }
@@ -112,6 +111,7 @@ section h2 {
 fieldset {
   display: grid;
   grid-template-columns: 1fr 3fr; 
+  max-width: 500px;
   gap: 15px; 
   padding: 20px;
   border: 1px solid hsl(272, 46%, 60%);
@@ -119,6 +119,8 @@ fieldset {
   background-color: #f9f9f9;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin-left: auto;
+  margin-right: auto;
 }
 
 legend {
@@ -223,7 +225,7 @@ footer a:hover {
         grid-template-columns: 1fr;
     }
     fieldset {
-        grid-template-columns: 1fr; 
+        grid-template-columns: 1fr 3fr; 
     }
     label {
         justify-self: start; 
